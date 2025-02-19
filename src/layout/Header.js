@@ -23,9 +23,16 @@ function Header() {
             </div>
         </div>
         <div className='header-bottom'>
-            <div className="nav-item"><Link to="/"><span>Home</span></Link></div>
-            <div className="nav-item"><Link to="/doggallery"><span>Gallery</span></Link></div>
-            <div className="nav-item"><Link to="/dogbreedsearch"><span>Search</span></Link></div>
+            <nav>
+                <button className="nav-item"><Link to="/"><span>Accueil</span></Link></button>
+                <button className="nav-item"><Link to="/planning"><span>Planning</span></Link></button>
+                <button className="nav-item"><Link to="/scolarite"><span>Scolarité</span></Link></button>
+                <button className="nav-item"><Link to="/ecole"><span>L'école</span></Link></button>
+                <button className="nav-item"><Link to="/vie-etudiante"><span>Vie étudiante</span></Link></button>
+                <button className="nav-item"><Link to="/stage-alternance"><span>Stages et alternances</span></Link></button>
+                <button className="nav-item"><Link to="/outils"><span>Outils</span></Link></button>
+                <button className="nav-item"><Link to="/aides"><span>Aides</span></Link></button>
+            </nav>
         </div>
       </nav>
     </header>
