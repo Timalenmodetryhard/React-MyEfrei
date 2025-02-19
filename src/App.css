@@ -88,6 +88,7 @@
 .search-bar > input {
   width: 100%;
   border: none;
+  outline: none;
   padding: 2.5px 4px 2.5px 6px;
 }
 
@@ -117,6 +118,7 @@
   position: relative;
   background-color: white;
   border: none;
+  border-bottom: solid 2px white;
   flex-basis: unset;
   opacity: 1;
   min-width: 90px;
@@ -129,8 +131,18 @@
   white-space: normal;
   padding: 5px 5px 5px 6px;
 }
+
 .header-bottom .nav-item:hover {
-  background-color: rgb(201, 201, 201);
+  background-color: rgb(235, 235, 235);
+  border-bottom: solid 2px rgb(235, 235, 235);
+}
+
+.header-bottom .nav-item.selected {
+  border-bottom: solid 2px rgb(231, 135, 59);
+}
+
+.header-bottom .nav-item.selected span {
+  color: rgb(231, 135, 59);
 }
 
 .nav-item a {
@@ -161,6 +173,17 @@
 }
 
 @media (min-width: 600px) {
+  .header-top {
+    min-height: 64px;
+  }
+
+  .header-top > .left {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 16px;
+  }
+
   .header-top > .left > a > img {
     width: auto;
     height: 34px;
