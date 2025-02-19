@@ -28,6 +28,86 @@
   color: #61dafb;
 }
 
+.nav-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-top {
+  display: flex;
+  background-color: #173767;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-top > .left {
+  flex: 0.5 1 0%;
+}
+
+.header-top > .left > a {
+  margin-left: 5%;
+  display: flex;
+}
+
+.header-top > .middle {
+  display: flex;
+  max-width: 1176px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  flex: 1.6 1 0%;
+}
+
+.header-top > .right {
+  display: flex;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  flex: 0.45 1 0%;
+}
+
+.header-top > img.left {
+  width: auto;
+  height: 28px;
+}
+
+.search-bar {
+  background-color: white;
+  margin: auto;
+  max-width: 912px;
+  padding: 0px 16px;
+  flex: 2 1 0%;
+}
+
+.search-bar > svg { 
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentcolor;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-bottom {
+  border-bottom: 1px solid rgb(237, 243, 248);
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  background-color: #173767;
+}
+
+@media (min-width: 600px) {
+  .header-top > .left > img {
+    width: auto;
+    height: 34px;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
